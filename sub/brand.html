@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    검색엔진 최적화(SEO)를 위한 메타태그
+    메타요소는 HTML의 head 요소안에 포함시킬 수 있음 
+    일반적인 마크업과는 별개로 페이지에 관련된 정보를 지정하는데 사용됨
+    검색엔진 최적화와 관련이 있음
+    -->
+
+  <meta name="keywords" content="오설록">
+  <meta name="descrition" content="차와 제주가 선사하는 가치있는 쉼, 오설록">
+
+    <!-- 오픈 그래프 Open Graph
+      콘텐츠의 요약 내용이 SNS 에 게시되는데 
+      최적화된 데이터를 가지고 갈 수 있도록 설정하는 것
+      
+      사용자가 클릭하기 전에 크롤러가 해당 웹사이트를 방문하여
+      HTML 의  head 의 메타데이터를 크롤링 하여 미리보기 화면을 생성해준다.
+
+      이미지의 경우는 최소한 600 x 315 px 은 되어야 하며, 1200 x 630px 크기를 권장
+      
+     ex) 카카오톡에 링크 사진 내용 보내기 같은 경우 
+    -->
+  <meta property="og:title" content="오설록">
+  <meta property="og:url" content="https://min-space.github.io/osulloc/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../images/common/og_img.jpg">
+  <meta property="og:descrition" content="차와 제주가 선사하는 가치있는 쉼, 오설록">
+
+  <title>오설록</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="../images/common/osulloc_favi.ico">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/font.css">
+
+  <!-- Bootstrap 아이콘 폰트 연결 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- css 1.reset 2.swiper 3.AOS 4.main -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+
+
+  <!-- js 1.jquery 2.swiper 3.AOS 4.main -->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="../js/main.js"></script>
+  
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="inner">
+        <h1><a href="../idex.html">오설록</a></h1>
+
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="#">브랜드</a>
+              <ul class="depth2">
+                <li><a href="brand.html">오설록 스토리</a></li>
+                <li><a href="brand.html">제주 티뮤지엄</a></li>
+                <li><a href="brand.html">다다일상</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">제품</a>
+              <ul class="depth2">
+                <li><a href="product.html">티제품</a></li>
+                <li><a href="product.html">티푸드</a></li>
+                <li><a href="product.html">티웨어</a></li>
+                <li><a href="product.html">선물추천</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">매장안내</a>
+              <ul class="depth2">
+                <li><a href="store.html">티뮤지엄</a></li>
+                <li><a href="store.html">티하우스</a></li>
+                <li><a href="store.html">티샵</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+              <ul class="depth2">
+                <li><a href="cs.html">공지사항</a></li>
+                <li><a href="cs.html">이벤트</a></li>
+                <li><a href="cs.html">멤버쉽</a></li>
+              </ul>
+            </li>
+          </ul><!--.gnb-->
+
+          <div class="mgnb-wrap">
+            <div class="mgnb-inner">
+              <div class="tit"><img src="../images/common/logo_w.png" alt="오설록"></div>
+              <ul class="mgnb">
+                <li>
+                  <a href="#">브랜드</a>
+                  <ul class="mdepth2">
+                    <li><a href="brand.html">오설록 스토리</a></li>
+                    <li><a href="brand.html">제주 티뮤지엄</a></li>
+                    <li><a href="brand.html">다다일상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">제품</a>
+                  <ul class="mdepth2">
+                    <li><a href="product.html">티제품</a></li>
+                    <li><a href="product.html">티푸드</a></li>
+                    <li><a href="product.html">티웨어</a></li>
+                    <li><a href="product.html">선물추천</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">매장안내</a>
+                  <ul class="mdepth2">
+                    <li><a href="store.html">티뮤지엄</a></li>
+                    <li><a href="store.html">티하우스</a></li>
+                    <li><a href="store.html">티샵</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">고객센터</a>
+                  <ul class="mdepth2">
+                    <li><a href="cs.html">공지사항</a></li>
+                    <li><a href="cs.html">이벤트</a></li>
+                    <li><a href="cs.html">멤버쉽</a></li>
+                  </ul>
+                </li>
+              </ul><!--.mgnb-->
+            </div><!--.mgnb-inner-->
+
+            <button type="button" class="bi bi-x-lg mgnb-close" aria-label="전체메뉴닫기"></button>
+   
+          </div><!--.mgnb-wrap-->
+        </nav>
+        
+        <div class="utill">
+          <button type="button" class="btn-search">검색창</button>
+          <button type="button" class="btn-menu">전체메뉴열기</button>
+          <a href="#" class="cart">장바구니</a>
+        </div><!--.utill-->
+
+      </div><!--.inner-->
+
+      <div class="search">
+        <form>
+          <fieldset>
+            <legend>검색영역</legend>
+            <div>
+              <input type="text" placeholder="검색어를 입력해주세요">
+              <button type="button" class="search-btn">검색</button>
+            </div>
+          </fieldset>
+        </form>
+      </div><!--.search-->
+
+      <!-- depth2-bg 를 inner 밖에 깔아놔야 나중에 만들 수 있음-->
+
+      <div class="depth2-bg"></div>
+
+    </header>
+
+    <!-- bg-brand 이름만 공통으로 써서 내용만 달라지고 백그라운드만 바꿈 -->
+    <div id="container">
+
+      <div class="sub-visual bg-brand">
+        <div class="inner">
+          <h2>브랜드</h2>
+          <ol class="breadcrumbs">
+            <li><a href="#"><i class="bi bi-house"></i></a></li>
+            <li><a href="#">브랜드</a></li>
+            <li><a href="#">오설록 스토리</a></li>
+          </ol>
+        </div><!--.inner-->
+
+        <div class="lnb">
+          <ul>
+            <li class="active"><a href="#">오설록 스토리</a></li>
+            <li><a href="#">제주 티뮤지엄</a></li>
+            <li><a href="#">다다일상</a></li>
+          </ul>
+        </div><!--.lnb-->
+      </div><!--.sub-visual bg-brand-->
+    
+      <div class="content">
+        <div class="inner">
+          <h3>오설록 스토리</h3>
+
+          <div class="intro">
+            <div class="story">
+              <figure><img src="../images/sub/about.jpg" alt="서성환 회장"></figure>
+              <figcaption>
+                <h4>Beautiful Devotion to Revive Tea Culture, Osulloc</h4>
+                <p>대한민국의 프리미엄 차 브랜드 오설록(Osulloc)은 바쁜 일상 속에서도 내면을 아름답게 가꾸고 일상에 삶의 멋을 더하며, 관계를 따뜻하게 이어주는 가치 있는 쉼을 선사합니다.</p>
+                <p>“ 어느 나라를 가도 나라마다 독특한 차가 하나씩은 있는데 우리나라는 없다. 어떤 희생을 치르더라도 우리의 전통 차문화를 정립하고 싶다. - 아모레퍼시픽 창업자 故 서성환 회장”</p>
+                <p>아모레퍼시픽의 창업주이자 오설록의 장원인 고(故) 서성환 회장은 천년의 역사를 가졌지만 어느 순간 자취를 감춰버린 우리나라의 차문화를 늘 아쉬워했습니다. 우리나라에 고유의 차문화를 정착시키겠다는 그의 일념으로 오설록의 아름다운 집념은 시작되었습니다. 그러나, 돌과 바람이 전부였던 제주의 버려진 땅. 억척스런 제주 사람의 손조차 한 번도 닿지 않은 채 버려진 3곳의 땅을 제주의 자연을 이해하고 극복하며 푸른 꿈을 45여 년을 키워온 결과, 제주의 땅은 세계적인 녹차 산지로 손꼽히는 최고의 차 재배지로 거듭났으며 한국의 차 문화 정립을 위해 땀과 열정들이 모여 세계적으로 권위 있는 명차 대회에서 매년 수상을 이어가며 한국의 차 문화 전파를 위해 오설록의 아름다운 집념은 계속되고 있습니다.</p>
+                <p>제주의 푸른 차밭, 차 문화의 깊이를 직접 체험할 수 있는 티스톤과 티뮤지엄, 도심 속 티하우스 그리고 제주 자연과 정성을 오롯이 담은 최고 품질의 차는 우리나라에 고유의 차 문화를 다시 부흥시키겠다는 오설록의 노력이 이루어낸 결실입니다.</p>
+              </figcaption>
+            </div><!--.story-->
+            <div class="location">
+              <h3>Location</h3>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4581.447185197541!2d126.28587403522988!3d33.305765936283684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350c5d1219ebcc11%3A0xb8a71289da43cad1!2z7Jik7ISk66GdIO2LsCDrrqTsp4Dsl4Q!5e0!3m2!1sko!2skr!4v1744770805094!5m2!1sko!2skr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div><!--.location-->
+            
+          </div><!--.intro-->
+        </div><!--.inner-->
+      </div><!--.content-->
+    </div><!--#container-->
+
+
+    <footer>
+      <div class="inner">
+        <div>
+          <ul class="f-link">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">서비스이용약관</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+            <li><a href="#">영상기기관리방침</a></li>
+          </ul>
+          <address>서울특별시 용산구 한강대로 100, 14층(한강로2가)<br>
+            대표이사 : 서혁제<br>
+            사업자등록번호 : 390-87-01499<br>
+            통신판매업신고번호 : 2019-서울용산-1173호</address>
+        </div><!--.f-link-->
+
+        <div>
+          <p class="call">고객상담센터 &middot; 주문/배송문의<br><span>080-805-5555</span></p>
+          <p class="copy">Copyright &copy; 2025 OSULLOC. All Rights Reserved.</p>
+        </div>
+      </div><!--.inner-->
+    </footer>
+
+  </div><!--#wrap-->
+</body>
+</html>

@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+:root{
+  --main-font : 'Arita-dotum', sans-serif;
+  --sub-font : "DM Serif Display", serif;
+  --main-color : #758246;
+  --sub-color : #a89079;
+  --base-color : #67625e;
+}
+
+/* sub-visual */
+.sub-visual .inner{
+  padding: 150px 0;
+}
+.sub-visual h2{
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+}
+.sub-visual.bg-brand{
+  background: url(../images/sub/sv_brand.jpg) no-repeat center / cover;
+}
+.sub-visual.bg-product{
+  background: url(../images/sub/sv_shopping.jpg) no-repeat center / cover;
+}
+.sub-visual.bg-store{
+  background: url(../images/sub/sv_event.jpg) no-repeat center / cover;
+}
+.sub-visual.bg-cs{
+  background: url(../images/sub/sv_cs.jpg) no-repeat center / cover;
+}
+
+.breadcrumbs{
+  padding: 20px 0 0;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* 글 위에 꺽새 만드는 법: 
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: translate(-25px , 15px) rotate(45deg); 내려주기 */
+
+.breadcrumbs li:not(:first-child)::before{
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: translate(-25px , 15px) rotate(45deg);
+}
+.breadcrumbs li a{
+  color: #fff;
+}
+
+/* lnb */
+/* 배경 블러처리하기  */
+.lnb{
+  background-color: rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+.lnb ul{
+  display: flex;
+  justify-content: center;
+}
+.lnb ul li a{
+  display: block;
+  padding: 20px 100px;
+  color: #fff;
+}
+.lnb ul li.active a{
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width:1024px){
+  .sub-visual .inner{padding: 100px 0;}
+  .sub-visual h2{font-size: 3rem;}
+  .lnb ul li a{padding: 15px;}
+}
+
+.content{
+  padding: 150px 0;
+}
+.content h3{
+  display: none;
+}
+
+/* intro */
+.intro{
+  text-align: center;
+}
+.intro .story{
+  margin-bottom: 50px;
+}
+.intro .story figcaption h4{
+  margin: 50px 0;
+  font-size: 3rem;
+}
+.intro .story figcaption p{
+  margin-bottom: 20px;
+}
+
+@media (max-width:470px){
+  .intro .story figcaption h4{font-size: 2rem;}
+  .intro .story figcaption img{width: 100%;}
+}
+
+/* product */
+.product .product-list{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.product .product-list li{
+  width: calc((100% - 60px) / 4);
+  background-color: #eee;
+  text-align: center;
+  position: relative;
+  padding: 0 0 50px;
+}
+.product .product-list li img{
+  width: 100%;
+}
+.product .product-list li .overbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.product .product-list li:hover .overbox{
+  opacity: 1;
+}
+.product .prd-name{
+  font-size: 2rem;
+}
+.product .price{
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+}
+.product .sale{
+  font-size: 2rem;
+  color: #666;
+  text-decoration: line-through;
+}
+.product a.cart{
+  display: inline-block; 
+  width: 50%; 
+  padding: 10px 0;
+  background-color: #fd5d5d;
+  color: #fff;
+}
+.product a.more{
+  display: inline-block; 
+  width: 50%; 
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+@media (max-width:1024px){
+  .product .product-list li{width: calc((100% - 20px) /2);}
+}
+
+/* store */
+
+.store .store-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.store .store-list li{
+  width: calc((100% - 20px) / 2);
+  background-color: #eee;
+}
+.store .store-list li img{
+  width: 100%;
+}
+.store .store-list li dl{
+  padding: 30px 40px;
+}
+.store .store-list li dl dt{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.store .store-list li dl dd{
+  color: #999;
+  padding-top: 10px;
+}
+
+@media (max-width:1024px){
+  .store .store-list li {width: 100%;}
+  .store .store-list li dl dt{font-size: 2rem;}
+}
+
+/* notice */
+
+.notice .notice-search div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.notice .notice-search div > *{
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  height: 40px;
+}
+.notice .notice-search select{
+  appearance: none;
+  background: url(../images/sub/chevron-down.svg) no-repeat right 10px center;
+  padding: 0 40px 0 10px;
+  border: 1px solid #ccc;
+}
+.notice .notice-search input[type=text]{
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 0;
+}
+.notice .notice-search .search-btn{
+  padding: 10px 20px;
+  color: #fff;
+  background-color: var(--main-color);
+  border: 0;
+}
+
+.notice table{
+  margin: 50px 0;
+}
+.notice table tr > :nth-child(1){
+  width: 10%;
+}
+.notice table tr > :nth-child(2){
+  width: 65%;
+}
+.notice table tr > :nth-child(3){
+  width: 15%;
+}
+.notice table tr > :nth-child(4){
+  width: 10%;
+}
+.notice table tr{
+  transition: all 0.5s;
+}
+.notice table tr:hover{
+  background-color: #eee;
+}
+.notice table tr th{
+  padding: 12px;
+  border-top: 1px solid #666; 
+  border-bottom: 1px solid #ccc;
+}
+.notice table tr td{
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+}
+.notice table tr td:nth-child(2){
+  text-align: left;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notice .paging{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.notice .paging li a{
+  display: block;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.notice .paging li.first a{
+  border: 0;
+  width: 20px;
+  font-size: 0;
+  color: transparent;
+  background: url(../images/sub/paging_first.png) no-repeat center;
+}
+.notice .paging li.prev a{
+  border: 0;
+  width: 20px;
+  font-size: 0;
+  color: transparent;
+  background: url(../images/sub/paging_prev.png) no-repeat center;
+}
+.notice .paging li.next a{
+  border: 0;
+  width: 20px;
+  font-size: 0;
+  color: transparent;
+  background: url(../images/sub/paging_next.png) no-repeat center;
+}
+.notice .paging li.last a{
+  border: 0;
+  width: 20px;
+  font-size: 0;
+  color: transparent;
+  background: url(../images/sub/paging_last.png) no-repeat center;
+}
+.notice .paging li.on a{
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: #fff;
+}
+@media (max-width:1024px){
+  .content{padding: 100px 0;}
+  .notice table{font-size: 1.4rem;}
+  .notice table tr > :nth-child(1){display: none;}
+  .notice table tr > :nth-child(2){width: 85%;}
+  .notice table tr > :nth-child(3){width: 15%;}
+  .notice table tr > :nth-child(4){display: none;}
+}
+@media (max-width:768px){
+  .notice .notice-search select{width: 100%;}
+  .notice .notice-search input[type=text]{width: calc(80% - 5px);}
+  .notice .notice-search .search-btn{width: 20%;}
+}
